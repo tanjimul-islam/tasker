@@ -1,3 +1,5 @@
+const { default: react } = require("@vitejs/plugin-react-swc");
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -17,5 +19,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    react/props-type: 0
   },
 }
